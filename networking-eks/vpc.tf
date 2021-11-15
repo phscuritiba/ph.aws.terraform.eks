@@ -28,7 +28,7 @@ resource "aws_vpc" "vpc1" {
 resource "aws_subnet" "subnet_public1" {
   vpc_id                    = aws_vpc.vpc1.id
   cidr_block                = var.subnet_public1_cidr_block
-    map_public_ip_on_launch = "true" #it makes this a public subnet
+  map_public_ip_on_launch   = "true" #it makes this a public subnet
   availability_zone         = data.aws_availability_zones.available.names[0]
 
   tags = merge(

@@ -9,8 +9,8 @@ address_allowed = "179.189.27.166/32" # My house public IP Address
 # Reference: https://docs.aws.amazon.com/general/latest/gr/acct-identifiers.html
 
 # Networking
-subnets = ["subnet-043b5d0b7624dc504", "subnet-06e507d88e2c6faf8"]
-vpc_id  = "vpc-0a8fa56b99cdd0757"
+subnets = ["subnet-08e7e62778c92ea8a", "subnet-051134c9b667b3668"]
+vpc_id  = "vpc-091459ce39e55542e"
 
 # EKS
 cluster_name                             = "phclst-eks-testing"
@@ -43,7 +43,7 @@ workers_additional_policies              = [
   "arn:aws:iam::407216465053:policy/aws_lb_controller" #trocar accoun id
 ]
 
-worker_additional_security_group_ids     = ["sg-06b0111817f83dce2"]
+worker_additional_security_group_ids     = ["sg-0909e063a6a89ae3e"]
 
 map_roles = [
   {

@@ -19,7 +19,7 @@ variable "tags" {
 }
 
 variable "environment" {
-  description = "Name Terraform workspace."
+  description = "Name Terraform Workspace."
 }
 
 variable "address_allowed" {
